@@ -1,0 +1,182 @@
+body {
+  text-align: center;
+  background: linear-gradient(-45deg, red, blue, green, white);
+  background-size: 200% 200%;
+  animation: gradient 10s ease-in infinite;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+  animation: moveHeader 5s ease-in-out 1,
+    rotate 15s 6s ease-in-out infinite;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+  animation: pulse 3s 2s linear infinite;
+}
+
+.w {
+  background-image: url('images/crash.png');
+}
+
+.a {
+  background-image: url('images/kick.png');
+}
+
+.s {
+  background-image: url('images/snare.png');
+}
+
+.d {
+  background-image: url('images/tom1.png');
+}
+
+.j {
+  background-image: url('images/tom2.png');
+}
+
+.k {
+  background-image: url('images/tom3.png');
+}
+
+.l {
+  background-image: url('images/tom4.png');
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid lightgreen;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+
+
+
+
+/*------------------ANIMATIONS----------------------*/
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moveHeader {
+  0% {
+    margin-left: -150%;
+    opacity: 0;
+  }
+
+  100% {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes moveHeader {
+  0% {
+    margin-left: -150%;
+    opacity: 0;
+  }
+
+  100% {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+
+    opacity: 0;
+  }
+
+  50% {
+
+    opacity: 0.6;
+  }
+
+  100% {
+
+    opacity: 1;
+  }
+
+}
